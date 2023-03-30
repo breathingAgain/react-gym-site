@@ -1,42 +1,59 @@
 import React, { Component } from 'react'
 import { Container, Nav, Tab, Row, Col } from 'react-bootstrap'
-
+import Tolyan from "../assets/Толян.jpg"
+import Yasya from "../assets/Яся.jpg"
+import Max from "../assets/Яся.jpg"
+import "./style.css"
 
 export default class About extends Component {
   render() {
     return (
-      <Container>
-        <Tab.Container id="ledt-tabs-example" defaultActiveKey="first">
-          <Row>
-            <Col sm={3}>
-              <Nav variant="pils" className="flex-column mt-2">
-                <Nav.Item>
-                    <Nav.Link eventKey="first">Design</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link eventKey="second">Team</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link eventKey="third">Framework</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link eventKey="fourth">yes</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link eventKey="fifth">what</Nav.Link>
-                </Nav.Item>
-              </Nav>
-            </Col>
-            <Col sm={9}>
-              <Tab.Content>
-                <Tab.Pane eventKey="fifth">               
-                  <p>Знакомьтесь... ебаная машина...</p>
-                </Tab.Pane>
-              </Tab.Content>
-            </Col>
-          </Row>
-        </Tab.Container>
-      </Container>
+      <div className='aboutBackground'>           
+        <div className='gridAbout'>
+          <div className='gridProfile'>
+            <div className='profileInfo'>
+            <img className='profilePhoto' src={Tolyan} />
+              <p>Ярослав</p>
+              <a href="#" class="btn btn-secondary"><span>Узнать больше</span></a>
+            </div>
+          </div>
+          <div className='gridProfile'>
+            <div className='profileInfo'>
+            <img className='profilePhoto' src={Tolyan} />
+              <p >Степа</p>
+              <a href="#" class="btn btn-secondary"><span>Узнать больше</span></a>
+            </div>
+          </div>
+          <div className='gridProfile'>
+            <div className='profileInfo'>
+            <img className='profilePhoto' src={Tolyan} />
+              <p >Руська</p>
+              <a href="#" class="btn btn-secondary"><span>Узнать больше</span></a>
+            </div>
+          </div>
+          <div className='gridProfile'>
+            <div className='profileInfo'>
+              <img className='profilePhoto' src={Tolyan} />
+              <p>Толян</p>
+              <a href="#" class="btn btn-secondary"><span>Узнать больше</span></a>
+            </div>
+          </div>
+          <div className='gridProfile'>
+            <div className='profileInfo'>
+            <img className='profilePhoto' src={Tolyan} />
+              <p>Рус</p>
+              <a href="#" class="btn btn-secondary"><span>Узнать больше</span></a>
+            </div>
+          </div>
+          <div className='gridProfile'>
+            <div className='profileInfo'>
+            <img className='profilePhoto' src={Tolyan} />
+              <p>Макс</p>
+              <a href="#" class="btn btn-secondary"><span>Узнать больше</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 }

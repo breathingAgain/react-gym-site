@@ -1,97 +1,49 @@
 import React, { Component } from 'react'
-import  Carousel  from 'react-bootstrap/Carousel'
-import Max from '../assets/Макс.jpg';
-import Stepa from '../assets/Степа.jpg';
-import Tolyan from '../assets/Толян.jpg';
-import Yasya from '../assets/Яся.jpg';
-import Rus from '../assets/Рус.jpg';
-import Phone from '../assets/Phone.jpg'
-import Aboltus from '../assets/Aboltus.jpg'
-import Sema from '../assets/Sema.jpg'
-
-export default class  extends Component {
+import Carousel from 'react-bootstrap/Carousel'
+import GymDark from "../assets/GymDark.jpg"
+import GymDumbell from "../assets/GymDumbell.jpg"
+import GymDeadLift from "../assets/GymDeadLift.jpg"
+import GymBox from "../assets/GymBox.jpg"
+import "./style.css"
+export default class extends Component {
   render() {
     return (
       <Carousel>
-        <Carousel.Item>
-            <img
-                className='d-block w-100'
-                src={Max}
-                alt="Max"
-            />
-            <Carousel.Caption>
-                <h1>Ebaniy Max</h1>
-            </Carousel.Caption>
+        <Carousel.Item className='containerCarousel'>
+          <img
+           className='imgCarousel'
+            src={GymDark}
+          />
+          <Carousel.Caption>
+            <h1>“Тело достигает того, во что верит разум.”</h1>
+          </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
-            <img
-                className='d-block w-100'
-                src={Stepa}
-                alt="Max"
-            />
-            <Carousel.Caption>
-                <h1>Ya blya</h1>
-            </Carousel.Caption>
+        <Carousel.Item className='containerCarousel'>
+          <img
+            className='imgCarousel'
+            src={GymDeadLift}
+          />
+          <Carousel.Caption>
+            <h1>“Заставьте себя, потому что никто другой не сделает этого за вас.”</h1>
+          </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
-            <img
-                className='d-block w-100'
-                src={Tolyan}
-                alt="Max"
-            />
-            <Carousel.Caption>
-                <h1>Tolyanych</h1>
-            </Carousel.Caption>
+        <Carousel.Item className='containerCarousel'>
+          <img
+           className='imgCarousel'
+            src={GymBox}
+          />
+          <Carousel.Caption>
+            <h1>“Самое сложное - привести свой разум в форму.”</h1>
+          </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
-            <img
-                className='d-block w-100'
-                src={Yasya}
-                alt="Max"
-            />
-            <Carousel.Caption>
-                <h1>Gavno</h1>
-            </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-            <img
-                className='d-block w-100'
-                src={Rus}
-                alt="Rus"
-            />
-            <Carousel.Caption>
-                <h1>Gavno</h1>
-            </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-            <img
-                className='d-block w-100'
-                src={Sema}
-                alt="Rus"
-            />
-            <Carousel.Caption>
-                <h1>Sema Moy Kot</h1>
-            </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-            <img
-                className='d-block w-100'
-                src={Aboltus}
-                alt="Rus"
-            />
-            <Carousel.Caption>
-                <h1>Aboltus blya</h1>
-            </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-            <img
-                className='d-block w-100'
-                src={Phone}
-                alt="Rus"
-            />
-            <Carousel.Caption>
-                <h1>Moy stariy telephone</h1>
-            </Carousel.Caption>
+        <Carousel.Item className='containerCarousel'>
+          <img
+            className='imgCarousel'
+            src={GymDumbell}
+          />
+          <Carousel.Caption>
+            <h1>“Не бойся быть новичком.”</h1>
+          </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
     )
