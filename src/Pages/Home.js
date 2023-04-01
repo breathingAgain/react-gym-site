@@ -11,10 +11,12 @@ import GymInv from '../assets/Гантеля.jpg'
 import Album from "../Pages/Album"
 import Schedule from "../Pages/Schedule"
 import { Route, Routes, BrowserRouter as Router  } from 'react-router-dom';
+import { useDispatch } from 'react-redux'
 
 export default class Home extends Component {
   render() {
     return (
+      const dispatch = useDispatch();
       <>
         <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
           <Container className='containerHeader'>

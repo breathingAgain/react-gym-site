@@ -4,7 +4,6 @@ import {useNavigate} from "react-router-dom"
 import { Form } from './Form'
 import {setUser} from "../store/slices/userSlice"
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import Header from './Header'
 
 const Login = () => {
     const dispatch = useDispatch();
@@ -22,7 +21,7 @@ const Login = () => {
                 }));
                 navigate("/home");
             })
-            .catch(() => alert("invalid user!"));
+            .catch(() => alert("Неверные данные!"));
             
 
     }
