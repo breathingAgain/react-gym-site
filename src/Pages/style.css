@@ -74,3 +74,8 @@ span{
    font-size:2vh;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.register{
+    display: flex;
+    justify-content: center;
+    margin-top: 6vh;
+}
