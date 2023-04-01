@@ -16,7 +16,6 @@ import { useDispatch } from 'react-redux'
 export default class Home extends Component {
   render() {
     return (
-      const dispatch = useDispatch();
       <>
         <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
           <Container className='containerHeader'>
